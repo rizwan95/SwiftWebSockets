@@ -46,6 +46,8 @@ class WebSocketConnector : NSObject {
             case .failure(let error):
                 self?.didReceiveError?(error)
             }
+            self?.addListener()
+
         }
     }
 }
